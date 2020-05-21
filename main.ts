@@ -58,7 +58,10 @@ f 9 9 9 . . . . . . . 9 . 9 9 f
 }
 let cloud: Sprite = null
 let cloud_list: Image[] = []
-create_clouds()
+let background_type = 0
+if (background_type == 1) {
+    create_clouds()
+}
 game.onUpdateInterval(Math.randomRange(1000, 3000), function () {
     cloud = sprites.create(cloud_list[Math.randomRange(0, cloud_list.length - 1)], SpriteKind.background)
     cloud.setFlag(SpriteFlag.Ghost, true)
