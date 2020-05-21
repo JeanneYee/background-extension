@@ -1,0 +1,52 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="KXzH)47@?ji{:rjsQwW;">cloud_list</variable><variable id="6ASo[lSDIYU!FYy?)nln">cloud</variable><variable id="NCSDL@l*Kdgon`Mo,@M(">dino</variable><variable type="KIND_SpriteKind" id="l12rH-z_?iU3rcMMWIz3">background</variable><variable type="KIND_SpriteKind" id="#DUURZNv@X/]s;{WX?:j">Player</variable><variable type="KIND_SpriteKind" id="yl)TFDcTQ=v7v%,K0zoJ">Projectile</variable><variable type="KIND_SpriteKind" id="UovPO6P5gs:zX,_,c)mT">Food</variable><variable type="KIND_SpriteKind" id="#dX8Su3.F1Dg/dOF{,5}">Enemy</variable></variables><block type="function_definition" x="254" y="36"><mutation name="create_clouds" functionid="27[+s,(mr)y$G4rduDYN"/><field name="function_name">create_clouds</field><statement name="STACK"><block type="gamesetbackgroundcolor"><value name="color"><shadow type="colorindexpicker"><field name="index">1</field></shadow></value><next><block type="variables_set"><field name="VAR" id="KXzH)47@?ji{:rjsQwW;">cloud_list</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="lists_create_with"><mutation items="3"/><value name="ADD0"><block type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . f f f . . . . . . . . 
+. . . . f . . . f . . . . . . . 
+. . f f 9 . . . . f f f . . . . 
+. f 9 . . 9 . . . . . 9 f . . . 
+. f 9 9 9 . 9 . . . . 9 f . . . 
+. . f 9 9 9 9 9 9 9 9 f . . . . 
+. . . f f f f f f f f . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></block></value><value name="ADD1"><block type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . f f f . . . . . . . . . . 
+. . f . . . f f f . . . . . . . 
+. f . . . . . . 9 f f f f f . . 
+f . . . . . . 9 . . . . . . f . 
+f 9 . . . . 9 . . . . . . . 9 f 
+. f 9 9 9 9 9 . . . . . . 9 9 f 
+. . f f f 9 9 9 9 9 9 9 9 9 f . 
+. . . . . f f f f f f f f f . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></block></value><value name="ADD2"><block type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . f f f . . . f f f . . . 
+. . . f . . . f f . . . . f . . 
+. . f . . . . . f f . . . . f . 
+. f . . . . . . . . . . . . f . 
+f 9 . . . . . . . . 9 . . . 9 f 
+f 9 9 . . . . . . . . 9 . . 9 f 
+f 9 9 9 . . . . . . . 9 . 9 9 f 
+. f 9 9 . . . . . . 9 . 9 9 f . 
+. . f 9 9 9 9 9 . 9 . 9 9 9 f . 
+. . . f f f 9 9 9 9 9 9 9 f . . 
+. . . . . . f f f f f f f . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></block></value></block></value></block></next></block></statement></block><block type="gameinterval" x="270" y="270"><value name="period"><shadow type="timePicker"/><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">1000</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">3000</field></shadow></value></block></value><statement name="HANDLER"><block type="variables_set"><field name="VAR" id="6ASo[lSDIYU!FYy?)nln">cloud</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"/><block type="lists_index_get"><value name="LIST"><block type="variables_get"><field name="VAR" id="KXzH)47@?ji{:rjsQwW;">cloud_list</field></block></value><value name="INDEX"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">0</field></shadow></value><value name="limit"><block type="math_arithmetic"><field name="OP">MINUS</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="lists_length"><value name="VALUE"><block type="variables_get"><field name="VAR" id="KXzH)47@?ji{:rjsQwW;">cloud_list</field></block></value></block></value><value name="B"><shadow type="math_number"><field name="NUM">1</field></shadow></value></block></value></block></value></block></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">background</field></shadow></value></block></value><next><block type="spritesetsetflag"><field name="flag">SpriteFlag.Ghost</field><value name="sprite"><block type="variables_get"><field name="VAR" id="6ASo[lSDIYU!FYy?)nln">cloud</field></block></value><value name="on"><shadow type="toggleOnOff"><field name="on">true</field></shadow></value><next><block type="Sprite_blockCombine_set"><field name="property">Sprite.z</field><value name="mySprite"><block type="variables_get"><field name="VAR" id="6ASo[lSDIYU!FYy?)nln">cloud</field></block></value><value name="value"><shadow type="math_number"><field name="NUM">-50</field></shadow></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="6ASo[lSDIYU!FYy?)nln">cloud</field></block></value><value name="x"><shadow type="positionPicker"/><block type="math_arithmetic"><field name="OP">ADD</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="cameraleft"/></value><value name="B"><shadow type="math_number"><field name="NUM">160</field></shadow></value></block></value><value name="y"><shadow type="positionPicker"/><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">10</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">80</field></shadow></value></block></value><next><block type="Sprite_blockCombine_set"><field name="property">Sprite.vx@set</field><value name="mySprite"><block type="variables_get"><field name="VAR" id="6ASo[lSDIYU!FYy?)nln">cloud</field></block></value><value name="value"><shadow type="math_number"><field name="NUM">-10</field></shadow></value></block></next></block></next></block></next></block></next></block></statement></block><block type="pxt-on-start" x="270" y="710"><statement name="HANDLER"><block type="function_call"><mutation name="create_clouds" functionid="27[+s,(mr)y$G4rduDYN"/></block></statement></block></xml>
